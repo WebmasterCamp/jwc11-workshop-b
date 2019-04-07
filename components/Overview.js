@@ -1,6 +1,7 @@
 import React from 'react'
 import { Table, Divider, Tag } from 'antd'
 import moment from 'moment'
+import { Button } from 'antd/lib/radio'
 
 moment().format('llll')
 
@@ -86,6 +87,9 @@ export const Overview = () => {
   return (
     <div id="container">
       <Table columns={columns} dataSource={data} />
+      <Button>
+        <a href="/static/report.pdf">Download Report</a>
+      </Button>
     </div>
   )
 }

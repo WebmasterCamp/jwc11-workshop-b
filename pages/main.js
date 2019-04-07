@@ -12,7 +12,9 @@ export default () => {
           justifyContent: 'center'
         }}
       >
-        <CalendarOverview />
+        <div style={{ width: '65vw' }}>
+          <CalendarOverview />
+        </div>
       </div>
     </Wrapper>
   )

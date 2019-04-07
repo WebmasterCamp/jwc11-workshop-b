@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { withRouter } from 'next/router'
-import { Menu, Layout } from 'antd'
+import { Menu, Layout, Icon } from 'antd'
 import moment from 'moment'
 import 'moment/locale/th'
 
@@ -9,7 +9,7 @@ import '../static/antd.css'
 
 moment.locale('th')
 
-const { Header, Content, Footer, Sider } = Layout
+const { Content, Footer, Sider } = Layout
 
 const Wrapper = ({ children, router }) => {
   const currentPage = path => {
@@ -44,6 +44,8 @@ const Wrapper = ({ children, router }) => {
       </Head>
       <Layout>
         <Sider
+          breakpoint="lg"
+          collapsedWidth="0"
           style={{
             overflow: 'auto',
             height: '100vh',
@@ -51,15 +53,30 @@ const Wrapper = ({ children, router }) => {
             left: 0
           }}
         >
+          <div
+            className="logo"
+            style={{ textAlign: 'center', padding: '10px' }}
+          >
+            <img src="../static/logo.png" />
+          </div>
           <Menu
             theme="dark"
             mode="inline"
             selectedKeys={[currentPage(router.pathname)]}
             onClick={handleClick}
           >
-            <Menu.Item key="1">Home</Menu.Item>
-            <Menu.Item key="2">Overview</Menu.Item>
-            <Menu.Item key="3">Task</Menu.Item>
+            <Menu.Item key="1">
+              <Icon type="calendar" />
+              Calendar
+            </Menu.Item>
+            <Menu.Item key="2">
+              <Icon type="global" />
+              Overview
+            </Menu.Item>
+            <Menu.Item key="3">
+              <Icon type="inbox" />
+              Task
+            </Menu.Item>
           </Menu>
         </Sider>
         <Layout className="layout" style={{ marginLeft: 200 }}>

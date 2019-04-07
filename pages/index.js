@@ -42,6 +42,7 @@ const Login = ({ form, router }) => {
           textAlign: 'center'
         }}
       >
+        <img src="../static/logo.png" />
         <h1 style={{ color: 'white' }}>Login</h1>
         <Form onSubmit={handleSubmit} style={{ width: '300px' }}>
           <Form.Item>
@@ -74,9 +75,6 @@ const Login = ({ form, router }) => {
             )}
           </Form.Item>
           <Form.Item>
-            <a style={{ float: 'left' }} href="">
-              Forgot password
-            </a>
             <Button type="primary" htmlType="submit" style={{ width: '100%' }}>
               <a href="/main">Log in</a>
             </Button>

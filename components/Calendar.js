@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Calendar, Badge, Card, Icon } from 'antd'
+import { Calendar, Badge, Card, Icon, Button, Upload } from 'antd'
+
+import '../static/calendar.css'
 
 function getListData(value) {
   let listData
@@ -64,35 +66,11 @@ export const CalendarOverview = () => {
 const CalendarComponent = ({ onSelect }) => {
   return (
     <div>
-      <h1>Calendar</h1>
       <Calendar
         dateCellRender={dateCellRender}
         monthCellRender={monthCellRender}
         onSelect={onSelect}
       />
-      <style jsx>
-        {`
-          .events {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          }
-          .events .ant-badge-status {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-            text-overflow: ellipsis;
-            font-size: 12px;
-          }
-          .notes-month {
-            text-align: center;
-            font-size: 28px;
-          }
-          .notes-month section {
-            font-size: 28px;
-          }
-        `}
-      </style>
     </div>
   )
 }
@@ -108,7 +86,7 @@ const CardComponent = ({ disable }) => {
       }}
     >
       <Card
-        style={{ width: 300 }}
+        style={{ width: 800 }}
         title="ฝากตัวรับใช้นาย"
         actions={[
           <Icon type="setting" />,
@@ -130,6 +108,11 @@ const CardComponent = ({ disable }) => {
           Mauris neque nibh, vehicula a enim sit amet, tincidunt tincidunt nunc.
           Mauris tortor nunc, congue a arcu nec, pulvinar dignissim leo.
         </p>
+        <Upload>
+          <Button>
+            <Icon type="upload" /> Click to Upload
+          </Button>
+        </Upload>
       </Card>
     </div>
   )
