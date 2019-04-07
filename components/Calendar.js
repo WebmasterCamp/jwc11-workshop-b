@@ -63,7 +63,8 @@ export const CalendarOverview = () => {
 
 const CalendarComponent = ({ onSelect }) => {
   return (
-    <React.Fragment>
+    <div>
+      <h1>Calendar</h1>
       <Calendar
         dateCellRender={dateCellRender}
         monthCellRender={monthCellRender}
@@ -92,7 +93,7 @@ const CalendarComponent = ({ onSelect }) => {
           }
         `}
       </style>
-    </React.Fragment>
+    </div>
   )
 }
 
