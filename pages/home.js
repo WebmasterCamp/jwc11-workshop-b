@@ -17,7 +17,7 @@ export default () => {
             style={{ width: 800 }}
             title="โรงเรียนจอมเวทย์"
             hoverable
-            headStyle={{ fontSize: '2rem' }}
+            headStyle={{ fontSize: '2rem', fontFamily: 'Kanit' }}
           >
             <p>
               ระบบการจัดตารางงานของโรงเรียนไม่มีประสิทธิภาพ

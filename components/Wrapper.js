@@ -45,7 +45,11 @@ const Wrapper = ({ children, router }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>School's Management</title>
+        <title>Managecher</title>
+        <link
+          href="https://fonts.googleapis.com/css?family=Kanit"
+          rel="stylesheet"
+        />
       </Head>
       <Layout>
         <Sider
@@ -93,7 +97,9 @@ const Wrapper = ({ children, router }) => {
             style={{
               margin: '24px 16px 0',
               overflow: 'initial',
-              height: 'calc(100vh - 90px)'
+              height: 'calc(100vh - 90px)',
+              fontFamily:
+                '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
             }}
           >
             {children}
