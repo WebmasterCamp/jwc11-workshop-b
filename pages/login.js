@@ -2,6 +2,8 @@ import React from 'react'
 import { withRouter } from 'next/router'
 import { Form, Icon, Input, Button, Checkbox } from 'antd'
 
+import 'antd/dist/antd.less'
+
 const Login = ({ form, router }) => {
   const handleSubmit = e => {
     e.preventDefault()
