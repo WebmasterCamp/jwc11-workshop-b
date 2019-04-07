@@ -7,7 +7,7 @@ function getListData(value) {
   let listData
   switch (value.date()) {
     case 8:
-      listData = [{ type: 'success', content: 'งานนิทรรศการวิชาการ' }]
+      listData = [{ type: 'success', content: 'ต้อนรับครูใหม่' }]
       break
     case 10:
       listData = [
@@ -87,7 +87,7 @@ const CardComponent = ({ disable }) => {
     >
       <Card
         style={{ width: 800 }}
-        title="ฝากตัวรับใช้นาย"
+        title="ต้อนรับครูใหม่"
         actions={[
           <Icon type="setting" />,
           <Icon type="eye-invisible" onClick={disable} />,
@@ -102,16 +102,10 @@ const CardComponent = ({ disable }) => {
         <p>Start : 10/04/62</p>
         <p>End : 10/04/62</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam
-          nisi, egestas vel sagittis sed, semper vel risus. Sed luctus elit
-          nulla, at maximus eros bibendum eget. Proin porttitor, nulla at tempus
-          eleifend, mi erat tempus lacus, eget posuere erat sem a diam.
-          Suspendisse potenti. Fusce est tellus, ornare ut placerat a,
-          vestibulum quis lacus. Aenean sed ex blandit, facilisis turpis eget,
-          ultrices velit. Aliquam erat volutpat. Pellentesque imperdiet
-          consectetur hendrerit. Vestibulum porttitor a nunc sed vehicula.
-          Mauris neque nibh, vehicula a enim sit amet, tincidunt tincidunt nunc.
-          Mauris tortor nunc, congue a arcu nec, pulvinar dignissim leo.
+          ขอให้คุณครูมาต้อนรับคุณครูที่มาใหม่วันนี้ ที่ชื่อ สามารถ สมดี
+          และออกไปซื้อของมาต้อนรับครูที่จะมาในวันนี้ หลังจากนั้นช่วยดูแล
+          และแนะนำเขา คอยสอนงานเกี่ยวกับโรงเรียนนี้ ว่ามีอะไรต้องทำบ้าง
+          บอกเกี่ยวกับกฎของโรงเรียนให้ครบถ้วนเรียบร้อย
         </p>
         <Upload>
           <Button>
