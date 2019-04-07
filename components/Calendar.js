@@ -93,6 +93,11 @@ const CardComponent = ({ disable }) => {
           <Icon type="eye-invisible" onClick={disable} />,
           <Icon type="check" onClick={disable} />
         ]}
+        hoverable
+        headStyle={{
+          backgroundColor: '#F7C45F',
+          color: 'black'
+        }}
       >
         <p>Start : 10/04/62</p>
         <p>End : 10/04/62</p>

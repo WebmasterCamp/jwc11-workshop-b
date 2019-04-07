@@ -14,24 +14,29 @@ const { Content, Footer, Sider } = Layout
 const Wrapper = ({ children, router }) => {
   const currentPage = path => {
     switch (path) {
-      case '/main':
+      case '/home':
         return '1'
-      case '/overview':
+      case '/main':
         return '2'
-      case '/task':
+      case '/overview':
         return '3'
+      case '/task':
+        return '4'
     }
   }
 
   const handleClick = e => {
     switch (e.key) {
       case '1':
-        router.push('/main')
+        router.push('/home')
         break
       case '2':
-        router.push('/overview')
+        router.push('/main')
         break
       case '3':
+        router.push('/overview')
+        break
+      case '4':
         router.push('/task')
         break
     }
@@ -66,14 +71,18 @@ const Wrapper = ({ children, router }) => {
             onClick={handleClick}
           >
             <Menu.Item key="1">
+              <Icon type="home" />
+              Home
+            </Menu.Item>
+            <Menu.Item key="2">
               <Icon type="calendar" />
               Calendar
             </Menu.Item>
-            <Menu.Item key="2">
+            <Menu.Item key="3">
               <Icon type="global" />
               Overview
             </Menu.Item>
-            <Menu.Item key="3">
+            <Menu.Item key="4">
               <Icon type="inbox" />
               Task
             </Menu.Item>

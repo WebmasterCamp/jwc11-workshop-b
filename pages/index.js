@@ -43,7 +43,7 @@ const Login = ({ form, router }) => {
         }}
       >
         <img src="../static/logo.png" />
-        <h1 style={{ color: 'white' }}>Login</h1>
+        <h1 style={{ color: 'white' }}>Managecher</h1>
         <Form onSubmit={handleSubmit} style={{ width: '300px' }}>
           <Form.Item>
             {getFieldDecorator('userName', {
