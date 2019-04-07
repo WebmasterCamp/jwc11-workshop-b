@@ -5,6 +5,8 @@ import { Menu, Layout } from 'antd'
 import moment from 'moment'
 import 'moment/locale/th'
 
+import 'antd/dist/antd.css'
+
 moment.locale('th')
 
 const { Header, Content, Footer } = Layout
